@@ -4,9 +4,31 @@
 <head>
   <meta charset='utf8'>
   <title>RESTful P.JS</title>
+  <script src="https://kit.fontawesome.com/7479bc5402.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
   <script src='./example-fetches.js'></script>
 </head>
 
-<body></body>
+<body>
+  <div class="container mt-4">
+    <h1 class="display-4 text-center">
+      <span class="text-primary">Todo</span>List</h1>
+    <form id="book-form">
+      <div class="form-group">
+        <label for="title">What is your todo?</label>
+        <input type="text" id="title" class="form-control">
+      </div>
+      <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+    </form>
+    <table class="table table-striped mt-5">
+      <thead>
+        <tr>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="book-list"></tbody>
+    </table>
+  </div>
+</body>
 
 </html>
